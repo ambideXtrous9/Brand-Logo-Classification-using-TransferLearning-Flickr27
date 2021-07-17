@@ -1,2 +1,2 @@
 # TransferLearning
-Incremental Learning using MobileNetV2 of Logo Dataset
+Transfer Learning InceptionV3 on Flickr-27 Logo Dataset
