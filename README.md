@@ -15,7 +15,7 @@ http://image.ntua.gr/iva/datasets/flickr_logos/flickr_logos_27_dataset.tar.gz
 ![image](https://user-images.githubusercontent.com/31372586/126049066-a529baf1-ad4d-4311-a5ff-1f8d27efb571.png)
 
 # 4. Confusion Matrix on Test Set(MNV2SGD):
-![image](https://user-images.githubusercontent.com/31372586/126138577-062e6fab-b8b9-469a-a125-5ff675f63e92.png)
+![image](https://user-images.githubusercontent.com/31372586/126141203-a81a6418-199f-4028-b0a0-c8ce2f0a2aba.png)
 
 
 # Some Prediction Results:
