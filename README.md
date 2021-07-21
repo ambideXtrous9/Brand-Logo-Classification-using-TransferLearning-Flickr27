@@ -14,7 +14,12 @@ http://image.ntua.gr/iva/datasets/flickr_logos/flickr_logos_27_dataset.tar.gz
 ![image](https://user-images.githubusercontent.com/31372586/126049064-26cec1bc-799e-4e42-aef2-accf718e661a.png)
 ![image](https://user-images.githubusercontent.com/31372586/126049066-a529baf1-ad4d-4311-a5ff-1f8d27efb571.png)
 
-# 4. Confusion Matrix on Test Set(MNV2SGD):
+# 4. Xception | Optimizer-SGD
+![image](https://user-images.githubusercontent.com/31372586/126415012-eef9fdee-33b5-4934-84fc-5323b4fa532a.png)
+![image](https://user-images.githubusercontent.com/31372586/126415025-7e88cb31-8631-4d08-8929-764c79f1e3e7.png)
+
+
+# Confusion Matrix on Test Set(MNV2SGD):
 ![image](https://user-images.githubusercontent.com/31372586/126141203-a81a6418-199f-4028-b0a0-c8ce2f0a2aba.png)
 
 
