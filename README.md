@@ -2,10 +2,6 @@
 # Flickr-27 Logo Dataset
 http://image.ntua.gr/iva/datasets/flickr_logos/flickr_logos_27_dataset.tar.gz
 
-# 1. MobileNetV2 | Optimizer-Adam 
-![image](https://user-images.githubusercontent.com/31372586/126048819-8e175327-1c83-445b-9ef0-d6be26ff291e.png) 
-![image](https://user-images.githubusercontent.com/31372586/126048897-a9551bc1-56eb-4ddd-b6e3-4b09e08a5ab9.png)
-
 # 2. MobileNetV2 | Optimizer-SGD
 ![image](https://user-images.githubusercontent.com/31372586/126048971-c266203a-9afb-43bc-99bd-522580dd5668.png)
 ![image](https://user-images.githubusercontent.com/31372586/126048976-00ae3fb1-e916-47b1-83a4-416dd2097f7a.png)
@@ -19,7 +15,7 @@ http://image.ntua.gr/iva/datasets/flickr_logos/flickr_logos_27_dataset.tar.gz
 ![image](https://user-images.githubusercontent.com/31372586/126415025-7e88cb31-8631-4d08-8929-764c79f1e3e7.png)
 
 
-# Confusion Matrix on Test Set(MNV2SGD):
+# Confusion Matrix on Test Set:
 ![image](https://user-images.githubusercontent.com/31372586/126141203-a81a6418-199f-4028-b0a0-c8ce2f0a2aba.png)
 
 
