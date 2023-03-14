@@ -1,6 +1,6 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FambideXtrous9%2FBrand-Logo-Detection-using-TransferLearning-Flickr27&count_bg=%233DB1C8&title_bg=%23555555&icon=codeigniter.svg&icon_color=%23F1218A&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-https://img.shields.io/github/watchers/ambideXtrous9/Brand-Logo-Detection-using-TransferLearning-Flickr27?style=social
+![GitHub watchers](https://img.shields.io/github/watchers/ambideXtrous9/Brand-Logo-Detection-using-TransferLearning-Flickr27?style=social)
 
 # TransferLearning
 # Flickr-27 Logo Dataset
