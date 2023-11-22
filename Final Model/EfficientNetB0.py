@@ -27,16 +27,13 @@ class EfficientNet(pl.LightningModule):
             param.requires_grad = False
         
         self.model.classifier = nn.Sequential(
-                      nn.Linear(self.model.classifier.in_features, 512), 
-                      nn.BatchNorm1d(512),
-                      nn.Dropout(0.4),
-                      nn.ReLU(inplace=True),
-                      nn.Linear(512, 256), 
-                      nn.BatchNorm1d(256),
-                      nn.Dropout(0.4),
-                      nn.ReLU(inplace=True),
-                      nn.Linear(256, num_classes),
-                      nn.LogSoftmax(dim=1))
+                    nn.BatchNorm1d(self.model.classifier.in_features),
+                    nn.Linear(self.model.classifier.in_features, 256), 
+                    nn.Dropout(0.2),
+                    nn.ReLU(inplace=True),
+                    nn.BatchNorm1d(256),
+                    nn.Linear(256, num_classes),
+                    nn.LogSoftmax(dim=1))
         # add metrics
         
     def forward(self, x):

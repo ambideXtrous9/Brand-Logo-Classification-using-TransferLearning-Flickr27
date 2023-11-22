@@ -29,7 +29,7 @@ class XceptionNet(pl.LightningModule):
         self.model.fc = nn.Sequential(
                             nn.BatchNorm1d(self.model.fc.in_features),
                             nn.Linear(self.model.fc.in_features, 256),
-                            nn.Dropout(0.5),
+                            nn.Dropout(0.2),
                             nn.ReLU(inplace=True),
                             nn.BatchNorm1d(256),
                             nn.Linear(256, num_classes),

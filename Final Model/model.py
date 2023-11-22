@@ -23,10 +23,10 @@ class CNNModel(pl.LightningModule):
         
         self.linear = nn.Sequential(
                 nn.Linear(128*24*24,512), # FC1
-                nn.Dropout(0.5),
+                nn.Dropout(0.2),
                 nn.ReLU(inplace=True),
                 nn.Linear(512,256),      # FC2
-                nn.Dropout(0.5),
+                nn.Dropout(0.2),
                 nn.ReLU(inplace=True),
                 nn.BatchNorm1d(256),
                 nn.Linear(256,out_features=num_classes), # FC3

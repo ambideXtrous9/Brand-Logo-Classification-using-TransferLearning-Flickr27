@@ -1,0 +1,9 @@
+WIDTH = 224
+HEIGHT = 224
+BATCH_SIZE = 32
+VAL_SPLIT = 0.2
+NUM_CLASSES = 27
+LR = 0.001
+CHECKPOINT_NAME = 'Efficient-Best'
+DATA_FOLDER = 'flickr_logos_dataset/Cropped_Logos'
+MAX_EPOCHS = 100
