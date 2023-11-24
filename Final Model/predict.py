@@ -1,5 +1,6 @@
 from dataloader import LogoDataModule,nrml,resize,transforms
 import config
+import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 from model import CNNModel
@@ -46,7 +47,7 @@ def readimage(text_file_path,logo_folder_path):
     return image_path, image_class
 
 
-def predimg(path):
+def predimg(path,true_class):
     image = Image.open(path).convert('RGB')
     
 
@@ -57,30 +58,30 @@ def predimg(path):
 
     with torch.no_grad():
         output = cnnmodel(input_tensor)
+        
+        probs = torch.exp(output)
 
         # Get the predicted class index
         index = torch.argmax(output).item()
         
-        #print("PREDICTED CLASS =", data_module.dataset.classes[index])
-
     predicted_class = data_module.dataset.classes[index]
+    predprob = round(probs[0][index].item(),2)
+    if(predprob < 0.80) : predicted_class = 'None'
     
     plt.imshow(image)
     plt.axis("off")
     # Print the predicted class on the image in red color
-    plt.text(15, 15, f'{predicted_class}', color='red', fontsize=15, weight='bold')
+    plt.text(20, 20, f'ACTUAL : {true_class}', color='green', fontsize=15, weight='bold')
+    plt.text(20, 40, f'PRED : {predicted_class}', color='red', fontsize=15, weight='bold')
+    plt.text(20, 60, f'PROB : {predprob}', color='blue', fontsize=15, weight='bold')
 
     plt.show()
 
 if __name__ == "__main__":
     # Path to the text file containing filenames and classes
-    text_file_path = 'flickr_logos_dataset/flickr_logos_27_dataset/flickr_logos_27_dataset_query_set_annotation.txt'
-
+    text_file_path = config.QUERY_SET_PATH
     # Path to the 'Logo Folder' containing images
-    logo_folder_path = 'flickr_logos_dataset/flickr_logos_27_dataset_images'
-    
+    logo_folder_path = config.MAIN_LOGO_FOLDER
     path,true_class = readimage(text_file_path,logo_folder_path)
-    
-    print("ACTUAL CLASS = ",true_class)
-    
-    predimg(path)
+        
+    predimg(path,true_class)
